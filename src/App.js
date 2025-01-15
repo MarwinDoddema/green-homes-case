@@ -22,7 +22,7 @@ export default function App() {
           leftContent={
             <div className="flex flex-col gap-4 -mt-8">
               <div className="flex flex-col gap-0 md:gap-4">
-                <h1>Jouw modulaire en duurzame droomwoning.</h1>
+                <h1>Jouw modulaire en duurzame starterswoning.</h1>
                 <h2 className="text-green">Exact zoals jij het wilt!</h2>
               </div>
               <p>
