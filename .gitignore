@@ -34,7 +34,6 @@ Thumbs.db
 .cache/
 .next/
 out/
-public/
 coverage/
 
 # Git-related
