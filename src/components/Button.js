@@ -1,8 +1,8 @@
 import clsx from "clsx";
 
 const variantClasses = {
-  primary: "bg-dark-green text-white",
-  secondary: "bg-green text-white",
+  primary: "bg-dark-green hover:bg-dark-green-hover text-white",
+  secondary: "bg-green hover:bg-green-hover text-white",
 };
 
 export default function Button({
@@ -13,12 +13,20 @@ export default function Button({
   onClick,
 }) {
   const baseClasses =
-    "py-2.5 px-7 font-heading text-base rounded-full inline-block w-fit";
+    "py-2.5 px-7 font-heading text-base rounded-full inline-block w-fit transition-all cursor-pointer";
   const classes = clsx(baseClasses, variantClasses[variant], className);
 
+  if (href) {
+    return (
+      <a href={href} className={classes}>
+        {children}
+      </a>
+    );
+  }
+
   return (
-    <a href={href} className={classes} onClick={onClick}>
+    <button className={classes} onClick={onClick}>
       {children}
-    </a>
+    </button>
   );
 }
