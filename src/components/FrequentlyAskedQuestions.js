@@ -14,7 +14,7 @@ export default function FrequentlyAskedQuestions({ items }) {
       {items.map((item, index) => (
         <div
           key={index}
-          className="border-green border-2 rounded-3xl transition-all hover:bg-light-green"
+          className="border-green border-2 rounded-xl md:rounded-3xl transition-all hover:bg-light-green"
         >
           <button
             onClick={() => toggleAccordion(index)}

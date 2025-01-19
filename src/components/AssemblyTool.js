@@ -59,7 +59,7 @@ export default function AssemblyTool() {
 
   return (
     <div>
-      <div className="bg-light-background-green p-4 md:p-7 rounded-t-2xl md:rounded-t-3xl flex flex-col gap-10">
+      <div className="bg-light-background-green p-4 md:p-7 rounded-t-2xl md:rounded-t-3xl flex flex-col gap-6 md:gap-10">
         <div className="flex flex-col gap-2.5">
           <h2>Kies de grootte</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-2.5">

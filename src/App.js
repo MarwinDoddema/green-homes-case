@@ -5,7 +5,13 @@ import Nav from "./components/Nav";
 import FlexibleGrid from "./components/FlexibleGrid";
 import Button from "./components/Button";
 import UniqueSellingPoint from "./components/UniqueSellingPoint";
-import { faBox } from "@fortawesome/free-solid-svg-icons";
+import {
+  faBox,
+  faEdit,
+  faLeaf,
+  faMoneyBill,
+  faTemperature0,
+} from "@fortawesome/free-solid-svg-icons";
 import ReviewBlock from "./components/ReviewBlock";
 import Footer from "./components/Footer";
 import FrequentlyAskedQuestions from "./components/FrequentlyAskedQuestions";
@@ -70,14 +76,21 @@ export default function App() {
             <div className="flex flex-col gap-4">
               <h2>De woningen beschikken over een warmtepomp</h2>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
-                sed dolor quis ex accumsan volutpat. Maecenas molestie gravida
-                eleifend.
+                Onze woningen zijn uitgerust met een energiezuinige warmtepomp
+                die zorgt voor een constant, comfortabel binnenklimaat. Deze
+                technologie helpt niet alleen om de woning efficiënt te
+                verwarmen, maar draagt ook bij aan lagere energiekosten.
               </p>
               <ul className="flex flex-col gap-2">
-                <UniqueSellingPoint icon={faBox}>USP 1</UniqueSellingPoint>
-                <UniqueSellingPoint icon={faBox}>USP 1</UniqueSellingPoint>
-                <UniqueSellingPoint icon={faBox}>USP 1</UniqueSellingPoint>
+                <UniqueSellingPoint icon={faLeaf}>
+                  Energiezuinig en duurzaam
+                </UniqueSellingPoint>
+                <UniqueSellingPoint icon={faMoneyBill}>
+                  Verlaging van energiekosten
+                </UniqueSellingPoint>
+                <UniqueSellingPoint icon={faTemperature0}>
+                  Constante temperatuur in huis
+                </UniqueSellingPoint>
               </ul>
             </div>
           }
@@ -90,13 +103,20 @@ export default function App() {
             <div className="flex flex-col gap-4">
               <h2>Maak zelf de keuze of, en hoeveel zonnepanelen je wilt</h2>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
-                sed dolor quis ex accumsan volutpat. Maecenas molestie gravida
-                eleifend.
+                Je hebt de vrijheid om te kiezen hoeveel zonnepanelen je wilt
+                laten plaatsen op je woning. Dit biedt je de mogelijkheid om je
+                energieverbruik verder te verlagen en je woning nog duurzamer te
+                maken. Of je nu kiest voor een kleiner aantal panelen voor
+                basisenergie of een groter aantal voor maximale efficiëntie, het
+                is allemaal mogelijk.
               </p>
               <ul className="flex flex-col gap-2">
-                <UniqueSellingPoint icon={faBox}>USP 1</UniqueSellingPoint>
-                <UniqueSellingPoint icon={faBox}>USP 1</UniqueSellingPoint>
+                <UniqueSellingPoint icon={faEdit}>
+                  Flexibele keuze voor zonnepanelen
+                </UniqueSellingPoint>
+                <UniqueSellingPoint icon={faMoneyBill}>
+                  Verlaag je energiekosten
+                </UniqueSellingPoint>
               </ul>
             </div>
           }
@@ -137,7 +157,7 @@ export default function App() {
               profilePicture="/user.png"
               title="Echt een droomhuis!"
               body="Dit huis is precies wat we wilden! Energiezuinig, flexibel en met een geweldige indeling. Het bouwproces was snel en het voelt echt als thuis."
-              rating={5}
+              rating={4.5}
             />
           }
         />
