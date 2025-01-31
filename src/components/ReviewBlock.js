@@ -2,21 +2,17 @@ import { faStar, faStarHalf } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function ReviewBlock({ profilePicture, title, body, rating }) {
-  // Function to round the rating to the nearest 0.5
   const roundRating = (rating) => {
     return Math.round(rating * 2) / 2;
   };
 
-  // Round the rating to .5 or whole numbers
   const roundedRating = roundRating(rating);
 
-  // Function to generate the stars
   const renderStars = () => {
     let stars = [];
     let fullStars = Math.floor(roundedRating);
     let halfStar = roundedRating % 1 !== 0;
 
-    // Add full stars
     for (let i = 0; i < fullStars; i++) {
       stars.push(
         <FontAwesomeIcon
@@ -27,7 +23,6 @@ export default function ReviewBlock({ profilePicture, title, body, rating }) {
       );
     }
 
-    // Add half star if necessary
     if (halfStar) {
       stars.push(
         <FontAwesomeIcon
